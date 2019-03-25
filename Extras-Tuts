@@ -1,0 +1,35 @@
+RDF & SPARQL:
+
+https://www.w3.org/People/Ivan/CorePresentations/SW_Advanced/Slides.pdf
+
+http://www.linkeddatatools.com/semantic-web-basics
+http://www.linkeddatatools.com/introducing-rdf
+http://www.linkeddatatools.com/semantic-modeling
+http://www.linkeddatatools.com/introducing-rdfs-owl
+http://www.linkeddatatools.com/querying-semantic-data
+
+https://open.hpi.de/courses/semanticweb2014
+
+https://jena.apache.org/tutorials/sparql.html
+
+
+
+Spark & Spark-SQL:
+
+https://www.tutorialspoint.com/apache_spark/
+https://www.tutorialspoint.com/spark_sql/spark_sql_introduction.htm
+https://www.edureka.co/blog/spark-sql-tutorial/
+https://www.simplilearn.com/spark-sql-tutorial
+https://www.youtube.com/watch?v=Mxw6QZk1CMY
+
+
+RDF Datasets BenchMarks:
+
+1- SP2Bench: http://dbis.informatik.uni-freiburg.de/forschung/projekte/SP2B/ (RAGAB)
+2- LUBM: http://swat.cse.lehigh.edu/projects/lubm/ (Sadeq)
+3- Berlin: http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/
+
+
+RDF Differnt Schema (Single Statement table, Vertical Partitioned Tables and Property Tables):
+
+https://www.researchgate.net/publication/241346176_AdaptRDF_Adaptive_storage_management_for_RDF_databases
