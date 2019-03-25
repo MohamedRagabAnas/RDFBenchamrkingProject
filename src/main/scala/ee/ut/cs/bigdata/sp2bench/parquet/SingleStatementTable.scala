@@ -18,7 +18,6 @@ object SingleStatementTable {
     sc.setLogLevel("ERROR")
 
 
-
     val spark = SparkSession
       .builder()
       .master("local")
