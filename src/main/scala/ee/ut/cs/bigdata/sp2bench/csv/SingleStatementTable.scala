@@ -41,6 +41,7 @@ object SingleStatementTable {
       """
         |SELECT
         |T3.object AS Year
+        |
         |FROM MyRDFTable T1, MyRDFTable T2, MyRDFTable T3
         |WHERE T1.subject=T2.subject
         |AND   T2.subject=T3.subject
