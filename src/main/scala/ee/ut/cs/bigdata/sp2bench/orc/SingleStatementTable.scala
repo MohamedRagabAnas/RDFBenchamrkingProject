@@ -191,18 +191,207 @@ object SingleStatementTable {
 
 
 
+    //////////////////////////////////// Query 6  Single Statement Table/////////////////////
+
+    spark.time(spark.sql(
+      """
+      SELECT
+     |    L1.yr       AS yr,
+     |    L1.name     AS name,
+     |    L1.document AS document
+     |FROM
+     |    (
+     |        SELECT
+     |            T1.subject    AS class,
+     |            T2.subject    AS document,
+     |            T3.object     AS yr,
+     |            T4.object     AS author,
+     |            T5.object     AS name
+     |        FROM
+     |            MyRDFTable T1
+     |
+     |            JOIN MyRDFTable T2     ON T1.subject=T2.object
+     |
+     |            JOIN MyRDFTable T3     ON T3.subject=T2.subject
+     |
+     |            JOIN MyRDFTable T4     ON T4.subject=T3.subject
+     |
+     |            JOIN MyRDFTable T5     ON T5.subject=T4.object
+     |
+     |        WHERE
+     |                T1.predicate='http://www.w3.org/2000/01/rdf-schema#subClassOf'
+     |            AND T2.predicate='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+     |            AND T3.predicate='http://purl.org/dc/terms/issued'
+     |            AND T4.predicate='http://purl.org/dc/elements/1.1/creator'
+     |            AND T5.predicate='http://xmlns.com/foaf/0.1/name'
+     |            AND T1.object='http://xmlns.com/foaf/0.1/Document'
+     |    ) L1
+     |
+     |    LEFT JOIN
+     |    (
+     |        SELECT
+     |            T1.subject    AS class,
+     |            T2.subject    AS document,
+     |            T3.object     AS yr,
+     |            T4.object     AS author
+     |        FROM
+     |            MyRDFTable T1
+     |
+     |            JOIN MyRDFTable T2     ON T1.subject=T2.object
+     |
+     |            JOIN MyRDFTable T3     ON T3.subject=T2.subject
+     |
+     |            JOIN MyRDFTable T4     ON T4.subject=T3.subject
+     |
+     |        WHERE
+     |                T1.predicate='http://www.w3.org/2000/01/rdf-schema#subClassOf'
+     |            AND T2.predicate='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+     |            AND T3.predicate='http://purl.org/dc/terms/issued'
+     |            AND T4.predicate='http://purl.org/dc/elements/1.1/creator'
+     |            AND T1.object='http://xmlns.com/foaf/0.1/Document'
+     |    ) L2
+     |    ON L1.author=L2.author AND L2.yr<L1.yr
+     |WHERE L2.author IS NULL
+      """.stripMargin ).show())
+
+
+
+
+
+
+    //////////////////////////////////// Query 8  Single Statement Table/////////////////////
+
+
+
+    spark.time(spark.sql(
+      """
+        |SELECT DISTINCT
+        |    name
+        |FROM
+        |    MyRDFTable T1
+        |    JOIN MyRDFTable T2     ON T1.subject=T2.subject
+        |    JOIN
+        |    (
+        |        SELECT
+        |            name,
+        |            erdoes
+        |        FROM
+        |        (
+        |            SELECT
+        |                T5.object     AS name,
+        |                T3.object    AS erdoes
+        |            FROM
+        |                MyRDFTable T3
+        |                JOIN MyRDFTable T4     ON T3.subject=T4.subject
+        |                JOIN MyRDFTable T5     ON T4.object=T5.subject
+        |
+        |            WHERE
+        |                    T3.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T4.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T5.predicate='http://xmlns.com/foaf/0.1/name'
+        |                AND NOT T3.object=T4.object
+        |        ) L
+        |        UNION
+        |        (
+        |            SELECT
+        |                T7.object AS name,
+        |                T3.object AS erdoes
+        |            FROM
+        |                MyRDFTable T3
+        |                JOIN MyRDFTable T4     ON T3.subject=T4.subject
+        |                JOIN MyRDFTable T5     ON T4.object=T5.object
+        |                JOIN MyRDFTable T6     ON T5.subject=T6.subject
+        |                JOIN MyRDFTable T7     ON T6.object=T7.subject
+        |
+        |            WHERE
+        |                T3.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T4.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T5.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T6.predicate='http://purl.org/dc/elements/1.1/creator'
+        |                AND T7.predicate='http://xmlns.com/foaf/0.1/name'
+        |
+        |
+        |                AND NOT T4.object=T3.object
+        |                AND NOT T5.subject=T3.subject
+        |                AND NOT T6.object=T3.object
+        |                AND NOT T4.object=T6.object
+        |        )
+        |    ) R ON T2.subject=R.erdoes
+        |WHERE
+        |        T1.predicate='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+        |    AND T2.predicate='http://xmlns.com/foaf/0.1/name'
+        |    AND T1.object='http://xmlns.com/foaf/0.1/Person'
+        |    AND T2.object='Paul Erdoes'
+      """.stripMargin).show()
+    )
+
+
+
+    ///////////////////////////////////////// Q9 ////////////////////////////////////////////
+
+
+
+    spark.time(spark.sql(
+      """
+        |SELECT DISTINCT L.predicate AS predicate
+        |FROM
+        |    (
+        |        SELECT
+        |            T1.subject  AS subject,
+        |            T2.predicate AS predicate
+        |        FROM
+        |            MyRDFTable T1
+        |            JOIN MyRDFTable T2     ON T1.subject=T2.object
+        |
+        |        WHERE
+        |                T1.predicate='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+        |            AND T1.object='http://xmlns.com/foaf/0.1/Person'
+        |        UNION
+        |        SELECT
+        |            T1.subject   AS subject,
+        |            T2.predicate AS predicate
+        |        FROM
+        |            MyRDFTable T1
+        |            JOIN MyRDFTable T2     ON T1.subject=T2.subject
+        |        WHERE
+        |                T1.predicate='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+        |            AND T1.object='http://xmlns.com/foaf/0.1/Person'
+        |    ) L
+      """.stripMargin).show())
+
+
+
+
+
+    ////////////////////////////////// query 10 ////////////////////////
+
+
+    spark.time(spark.sql(
+      """
+        |SELECT
+        |    T.subject  AS subject,
+        |    T.predicate AS predicate
+        |FROM
+        |    MyRDFTable T
+        |WHERE
+        |    T.object='http://localhost/persons/Paul_Erdoes'
+      """.stripMargin).show())
+
+
 
     /////////////////////////////////////query 11/////////////////////////////////////////////
-    /* spark.sql(
-       """
-         |SELECT
-         |T1.object AS ee
-         |FROM MyRDFTable T1
-         |WHERE T1.predicate='http://www.w3.org/2000/01/rdf-schema#seeAlso'
-         |ORDER BY ee
-         |LIMIT 10
-         |
-         | """.stripMargin).show */
+    spark.time(spark.sql(
+      """
+        |SELECT
+        |T1.object AS ee
+        |FROM MyRDFTable T1
+        |WHERE T1.predicate='http://www.w3.org/2000/01/rdf-schema#seeAlso'
+        |ORDER BY ee DESC
+        |LIMIT 10
+        |
+        | """.stripMargin).show)
+
+
 
 
 

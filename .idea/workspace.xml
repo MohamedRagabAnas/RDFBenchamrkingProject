@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="545a8e32-d29e-4fc2-a831-d3e433020c35" name="Default Changelist" comment="Queries Almost Done">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/InProceedingArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/InProceedingArticle/.part-00000-42adcfa4-92f9-4f88-8e8e-21669297a833-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/InProceedingArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/InProceedingArticle/part-00000-42adcfa4-92f9-4f88-8e8e-21669297a833-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Journal/.part-00000-9fb7f596-649a-49e1-b49e-ac55bf195399-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Journal/part-00000-9fb7f596-649a-49e1-b49e-ac55bf195399-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/JournalArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/JournalArticle/.part-00000-aeb5e8a8-6eb4-49ea-aa81-500c1edf17e3-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/JournalArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/JournalArticle/part-00000-aeb5e8a8-6eb4-49ea-aa81-500c1edf17e3-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Person/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Person/.part-00000-0ca3f258-8f0a-4f99-882e-48fdacf71444-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Person/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/PropertyTables/Person/part-00000-0ca3f258-8f0a-4f99-882e-48fdacf71444-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/SingleTable/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/SingleTable/.part-00000-f8528d2b-be50-4bf8-86ad-31116bab3d29-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/SingleTable/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/SingleTable/part-00000-f8528d2b-be50-4bf8-86ad-31116bab3d29-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Abstract/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Abstract/.part-00000-c14d89dc-db03-4e6e-b4a1-5140383515a6-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Abstract/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Abstract/part-00000-c14d89dc-db03-4e6e-b4a1-5140383515a6-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/BookTitle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/BookTitle/.part-00000-e7baeb01-40e6-42ac-9f4c-e432ad27e76c-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/BookTitle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/BookTitle/part-00000-e7baeb01-40e6-42ac-9f4c-e432ad27e76c-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Creator/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Creator/.part-00000-bbb5eb5d-b3b6-4c6f-ac9d-3f1ad32e1362-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Creator/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Creator/part-00000-bbb5eb5d-b3b6-4c6f-ac9d-3f1ad32e1362-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/HomePage/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/HomePage/.part-00000-3335b422-dcef-4ad4-a585-9f2b8418de37-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/HomePage/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/HomePage/part-00000-3335b422-dcef-4ad4-a585-9f2b8418de37-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Issued/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Issued/.part-00000-69fbaca2-8903-43a2-8434-0dd57b434913-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Issued/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Issued/part-00000-69fbaca2-8903-43a2-8434-0dd57b434913-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Journal/.part-00000-7fef006c-e903-47fc-bf4e-adf1f9083958-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Journal/part-00000-7fef006c-e903-47fc-bf4e-adf1f9083958-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Name/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Name/.part-00000-34494a19-d5a7-4d37-96da-7a598c241738-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Name/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Name/part-00000-34494a19-d5a7-4d37-96da-7a598c241738-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Pages/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Pages/.part-00000-acc45c84-688b-4075-8afd-d7697c2eb824-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Pages/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Pages/part-00000-acc45c84-688b-4075-8afd-d7697c2eb824-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/SeeAlso/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/SeeAlso/.part-00000-9abf7743-d00c-42db-91bc-caa368e14910-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/SeeAlso/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/SeeAlso/part-00000-9abf7743-d00c-42db-91bc-caa368e14910-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Title/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Title/.part-00000-ecd84cc1-61c0-4da1-8b83-8028f26290d1-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Title/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Title/part-00000-ecd84cc1-61c0-4da1-8b83-8028f26290d1-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Type/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Type/.part-00000-3f6c432d-9982-4be1-aafd-b33f42f1b01a-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Type/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/Type/part-00000-3f6c432d-9982-4be1-aafd-b33f42f1b01a-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/partOf/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/partOf/.part-00000-0c33c005-0f73-4df1-b506-9c74eb923906-c000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/partOf/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/AVRO/VerticalTables/partOf/part-00000-0c33c005-0f73-4df1-b506-9c74eb923906-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Book.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Journal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/JournalArticle.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/MasterTheis.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Person.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/PhDThesis.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Proceeding.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Www.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/inCollectionArticle.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/inProceedingArticle.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/SingleStatementTable/SingleTable.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/abstract.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/booktitle.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/cdrom.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/creator.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/editor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/homepage.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/isbn.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/issued.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/journal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/month.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/name.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/note.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/number.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/pages.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/partOf.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/publisher.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/seeAlso.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/series.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/subClassOf.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/title.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/type.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/VerticalTables/volume.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/InProceedingArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/InProceedingArticle/.part-00000-78536e55-219c-431b-9a9a-6ba31b4802cf-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/InProceedingArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/InProceedingArticle/part-00000-78536e55-219c-431b-9a9a-6ba31b4802cf-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Journal/.part-00000-8a0b1718-d96e-4603-a342-a93871ae69a9-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Journal/part-00000-8a0b1718-d96e-4603-a342-a93871ae69a9-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/JournalArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/JournalArticle/.part-00000-6c1a1894-6396-4cc8-845d-2192939cbed8-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/JournalArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/JournalArticle/part-00000-6c1a1894-6396-4cc8-845d-2192939cbed8-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Person/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Person/.part-00000-a445e2ad-f610-4a17-b62d-f775b6d8bd52-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Person/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/PropertyTables/Person/part-00000-a445e2ad-f610-4a17-b62d-f775b6d8bd52-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/SingleTable/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/SingleTable/.part-00000-f3186b0f-a7af-4ce5-9761-8a4c8fd9fbb8-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/SingleTable/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/SingleTable/part-00000-f3186b0f-a7af-4ce5-9761-8a4c8fd9fbb8-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/abstract/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/abstract/.part-00000-54581d6f-64fa-4aaa-887c-68083e42efd9-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/abstract/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/abstract/part-00000-54581d6f-64fa-4aaa-887c-68083e42efd9-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/booktitle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/booktitle/.part-00000-7deb59dc-ad5f-43e1-9976-4be79cf40cca-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/booktitle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/booktitle/part-00000-7deb59dc-ad5f-43e1-9976-4be79cf40cca-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/creator/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/creator/.part-00000-8f2c1abc-d1e3-4f40-8f8b-5a6c161c0adf-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/creator/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/creator/part-00000-8f2c1abc-d1e3-4f40-8f8b-5a6c161c0adf-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/homepage/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/homepage/.part-00000-9d075a6b-e53d-4fb5-8dfc-57db80e78fc4-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/homepage/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/homepage/part-00000-9d075a6b-e53d-4fb5-8dfc-57db80e78fc4-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/issued/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/issued/.part-00000-3073abf4-014d-4c14-aa11-e1c19a2e42b0-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/issued/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/issued/part-00000-3073abf4-014d-4c14-aa11-e1c19a2e42b0-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/journal/.part-00000-6fda57e0-1b2b-44e8-a80e-b4940b8cfe52-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/journal/part-00000-6fda57e0-1b2b-44e8-a80e-b4940b8cfe52-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/name/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/name/.part-00000-f49b8dbb-4107-404c-9f8a-a86795d33b4b-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/name/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/name/part-00000-f49b8dbb-4107-404c-9f8a-a86795d33b4b-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/pages/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/pages/.part-00000-dfe9cd34-0197-4bfb-9bbe-3a688e7a4a6e-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/pages/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/pages/part-00000-dfe9cd34-0197-4bfb-9bbe-3a688e7a4a6e-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/partOf/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/partOf/.part-00000-9fd8c006-b0b1-4cf0-8dff-6d9f2601252a-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/partOf/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/partOf/part-00000-9fd8c006-b0b1-4cf0-8dff-6d9f2601252a-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/seeAlso/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/seeAlso/.part-00000-b89fd15b-6f84-48ba-aca8-938a74fa6867-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/seeAlso/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/seeAlso/part-00000-b89fd15b-6f84-48ba-aca8-938a74fa6867-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/title/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/title/.part-00000-6e5cf638-7d00-45b8-aa4b-36950b0d00ff-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/title/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/title/part-00000-6e5cf638-7d00-45b8-aa4b-36950b0d00ff-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/type/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/type/.part-00000-7a6e6d1a-ab69-4d2b-8033-cabf62cd5301-c000.snappy.orc.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/type/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/ORC/VerticalTables/type/part-00000-7a6e6d1a-ab69-4d2b-8033-cabf62cd5301-c000.snappy.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/InProceedingArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/InProceedingArticle/.part-00000-21fa2af5-8152-4e59-84df-10f3ad2d358b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/InProceedingArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/InProceedingArticle/part-00000-21fa2af5-8152-4e59-84df-10f3ad2d358b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Journal/.part-00000-1f7249da-f2ec-4484-956f-a74d5116cdae-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Journal/part-00000-1f7249da-f2ec-4484-956f-a74d5116cdae-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/JournalArticle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/JournalArticle/.part-00000-38c6005d-4381-4250-b621-9cdad0ff5bdc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/JournalArticle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/JournalArticle/part-00000-38c6005d-4381-4250-b621-9cdad0ff5bdc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Person/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Person/.part-00000-b37fae54-b7a8-4b18-9bb2-9e1fbfe19d71-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Person/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/PropertyTables/Person/part-00000-b37fae54-b7a8-4b18-9bb2-9e1fbfe19d71-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable/.part-00000-b21d9f25-cefc-4b14-acf8-3e05543d04ac-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable/part-00000-b21d9f25-cefc-4b14-acf8-3e05543d04ac-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/.part-00000-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/.part-00001-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/.part-00002-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/.part-00003-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/.part-00004-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/part-00000-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/part-00001-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/part-00002-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/part-00003-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/SingleTable_partitioned/part-00004-74a23c55-d6ed-445f-8866-e2603ce2f5eb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Abstract/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Abstract/.part-00000-b10a159f-595a-4107-a40f-675b7e5d4cdc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Abstract/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Abstract/part-00000-b10a159f-595a-4107-a40f-675b7e5d4cdc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/BookTitle/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/BookTitle/.part-00000-8d0e97d2-9a72-43d7-9ab4-e0f489e4c194-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/BookTitle/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/BookTitle/part-00000-8d0e97d2-9a72-43d7-9ab4-e0f489e4c194-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Creator/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Creator/.part-00000-f934a726-fa55-475a-8404-1d23e76e831e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Creator/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Creator/part-00000-f934a726-fa55-475a-8404-1d23e76e831e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/HomePage/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/HomePage/.part-00000-3f469521-a607-4023-b707-4c33784461f9-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/HomePage/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/HomePage/part-00000-3f469521-a607-4023-b707-4c33784461f9-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Issued/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Issued/.part-00000-8bad554a-9043-4de7-ae25-9b5715bdcb9a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Issued/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Issued/part-00000-8bad554a-9043-4de7-ae25-9b5715bdcb9a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Journal/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Journal/.part-00000-67bdec23-003c-449e-a832-ade1804a2549-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Journal/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Journal/part-00000-67bdec23-003c-449e-a832-ade1804a2549-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Name/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Name/.part-00000-537d7777-2ffe-40a6-9f44-7324c07af516-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Name/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Name/part-00000-537d7777-2ffe-40a6-9f44-7324c07af516-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Pages/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Pages/.part-00000-a7ae616b-2c2e-45e9-8d40-ba214b99def6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Pages/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Pages/part-00000-a7ae616b-2c2e-45e9-8d40-ba214b99def6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/PartOf/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/PartOf/.part-00000-eb28ac71-53a1-468b-8474-7958f69aa4bb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/PartOf/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/PartOf/part-00000-eb28ac71-53a1-468b-8474-7958f69aa4bb-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/SeeAlso/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/SeeAlso/.part-00000-fc9960d5-9832-4373-99fc-3d807bb9e0ff-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/SeeAlso/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/SeeAlso/part-00000-fc9960d5-9832-4373-99fc-3d807bb9e0ff-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Title/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Title/.part-00000-33f3691c-3563-429f-a458-623e515005c4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Title/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Title/part-00000-33f3691c-3563-429f-a458-623e515005c4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Type/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Type/.part-00000-644f20bb-3bf3-465c-97be-cd150d0f80f8-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Type/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/Parquet/VerticalTables/Type/part-00000-644f20bb-3bf3-465c-97be-cd150d0f80f8-c000.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/SingleStatementTable.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/SingleStatementTable.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/VerticalTables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/VerticalTables.scala" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="312" column="25" lean-forward="true" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="361" column="9" lean-forward="true" selection-start-line="361" selection-start-column="9" selection-end-line="361" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="479" lean-forward="true" selection-start-line="305" selection-end-line="479" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4919">
+              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="393" lean-forward="true" selection-start-line="193" selection-start-column="4" selection-end-line="393" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/ProertyTables.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="153" selection-start-line="153" selection-end-line="303" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>type</find>
+      <find>Triples</find>
+      <find>D.</find>
+      <find>Combined</find>
+      <find>rdfs_subClassOf</find>
+      <find>T.pr</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>MyRDFTable</replace>
+      <replace>PredicatesCombined</replace>
+      <replace>subClassOf</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/avro/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/avro/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/RDFBenchVerticalTablesCSV.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/RDFBenchMainAVRO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/RDFBenchProertyTablesHive.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/RDFBenchVerticalTablesORC.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/RDFBenchVerticalTablesPARQUET.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/mysql/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/mysql/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/VerticalTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/VerticalTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/VerticalTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/VerticalTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="89" />
+    <option name="width" value="920" />
+    <option name="height" value="915" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="sp2bench" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554411455587" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FormatsConversion" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet" />
+      <recent name="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc" />
+      <recent name="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive" />
+      <recent name="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro" />
+      <recent name="$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.VerticalTables (1)">
+    <configuration name="ProertyTables (2)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ut.cs.bigdata.sp2bench.parquet.ProertyTables" />
+      <module name="RDFBenchmarkingProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleStatementTable (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ut.cs.bigdata.sp2bench.orc.SingleStatementTable" />
+      <module name="RDFBenchmarkingProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleStatementTable" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ut.cs.bigdata.sp2bench.parquet.SingleStatementTable" />
+      <module name="RDFBenchmarkingProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerticalTables (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ut.cs.bigdata.sp2bench.parquet.VerticalTables" />
+      <module name="RDFBenchmarkingProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerticalTables" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ut.cs.bigdata.sp2bench.postgresql.VerticalTables" />
+      <module name="RDFBenchmarkingProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VerticalTables (1)" />
+        <item itemvalue="Application.ProertyTables (2)" />
+        <item itemvalue="Application.SingleStatementTable" />
+        <item itemvalue="Application.SingleStatementTable (1)" />
+        <item itemvalue="Application.VerticalTables" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="RDFBenchmarkingProject" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="rdfbenchmarkingproject [file:/home/cloudera/Downloads/ClouderaMachineBackupFiles2019/RDFBenchmarkingProject/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="RDFBenchmarkingProject-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="2378941286" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2567920773" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="545a8e32-d29e-4fc2-a831-d3e433020c35" name="Default Changelist" comment="" />
+      <created>1553465945531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553465945531</updated>
+    </task>
+    <task id="LOCAL-00001" summary="RDFBenchamrking Project">
+      <created>1553473609254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553473609254</updated>
+    </task>
+    <task id="LOCAL-00002" summary="RDFBenchamrking Project">
+      <created>1553473838720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553473838721</updated>
+    </task>
+    <task id="LOCAL-00003" summary="edit sbt configurations">
+      <created>1553516651488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553516651488</updated>
+    </task>
+    <task id="LOCAL-00004" summary="edit sbt configurations">
+      <created>1554409530086</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554409530086</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="25" width="1924" height="1034" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1943557" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="DB Browser" order="7" />
+      <window_info id="Project Explorer" order="8" />
+      <window_info id="Job Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18241759" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.07362638" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32930845" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32967034" />
+      <window_info anchor="bottom" id="DB Execution Console" order="13" />
+      <window_info anchor="bottom" id="Console" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="sbt" order="8" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="RDFBenchamrking Project" />
+    <MESSAGE value="edit sbt configurations" />
+    <MESSAGE value="add datasets" />
+    <MESSAGE value="Queries Almost Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queries Almost Done" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/RDFBenchAVRO/package.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/mysql/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="46" column="157" selection-start-line="46" selection-start-column="157" selection-end-line="46" selection-end-column="157" />
+          <folding>
+            <element signature="e#42#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Book.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5131">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="146" selection-start-line="146" selection-end-line="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="477" lean-forward="true" selection-start-line="477" selection-end-line="477" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="54" column="194" selection-start-line="54" selection-start-column="179" selection-end-line="54" selection-end-column="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2790">
+          <caret line="188" column="40" selection-start-line="187" selection-end-line="388" />
+          <folding>
+            <element signature="e#39#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="315" column="25" lean-forward="true" selection-start-line="309" selection-end-line="484" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="199" selection-start-line="199" selection-end-line="398" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="330" lean-forward="true" selection-start-line="163" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/hive/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="305" column="25" lean-forward="true" selection-start-line="298" selection-end-line="474" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="158" column="32" lean-forward="true" selection-start-line="158" selection-start-column="32" selection-end-line="158" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/postgresql/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3537">
+          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="153" selection-start-line="153" selection-end-line="303" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="479" lean-forward="true" selection-start-line="305" selection-end-line="479" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="393" lean-forward="true" selection-start-line="193" selection-start-column="4" selection-end-line="393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="312" column="25" lean-forward="true" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4919">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="361" column="9" lean-forward="true" selection-start-line="361" selection-start-column="9" selection-end-line="361" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RDFBenchmarkingProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sbt: antlr:antlr:2.7.7:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
