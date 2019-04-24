@@ -278,55 +278,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/ProertyTables.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="312" column="25" lean-forward="true" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+            <state relative-caret-position="105">
+              <caret line="9" column="41" lean-forward="true" selection-end-line="326" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/SingleStatementTable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="46" column="25" lean-forward="true" selection-end-line="409" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/VerticalTables.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="361" column="9" lean-forward="true" selection-start-line="361" selection-start-column="9" selection-end-line="361" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="479" lean-forward="true" selection-start-line="305" selection-end-line="479" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4919">
-              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="393" lean-forward="true" selection-start-line="193" selection-start-column="4" selection-end-line="393" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/ProertyTables.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="153" selection-start-line="153" selection-end-line="303" selection-end-column="30" />
+            <state relative-caret-position="675">
+              <caret line="446" column="9" lean-forward="true" selection-end-line="486" />
             </state>
           </provider>
         </entry>
@@ -405,7 +378,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,17 +412,26 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="sp2bench" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RDFBenchmarkingProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RDFBenchmarkingProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="sp2bench" type="462c0819:PsiDirectoryNode" />
+              <item name="avro" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554411455587" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FormatsConversion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -598,8 +580,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="25" width="1924" height="1034" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1943557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19648562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -611,13 +594,13 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18241759" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18241759" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.07362638" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.34395605" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32930845" />
@@ -697,34 +680,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/DataSets/CSV/PropertyTables/Book.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/SingleStatementTable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5131">
-          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/ProertyTables.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="146" selection-start-line="146" selection-end-line="312" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/VerticalTables.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="477" lean-forward="true" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="54" column="194" selection-start-line="54" selection-start-column="179" selection-end-line="54" selection-end-column="207" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/SingleStatementTable.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2790">
@@ -791,6 +746,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4650">
+          <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7035">
+          <caret line="471" column="25" selection-start-line="471" selection-start-column="25" selection-end-line="471" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7155">
+          <caret line="479" selection-start-line="305" selection-end-line="479" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5865">
+          <caret line="393" selection-start-line="193" selection-start-column="4" selection-end-line="393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/csv/ProertyTables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="54" column="194" selection-start-line="54" selection-start-column="179" selection-end-line="54" selection-end-column="207" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/ProertyTables.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -798,38 +795,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/VerticalTables.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/ProertyTables.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="479" lean-forward="true" selection-start-line="305" selection-end-line="479" />
+        <state relative-caret-position="105">
+          <caret line="9" column="41" lean-forward="true" selection-end-line="326" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/orc/SingleStatementTable.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/SingleStatementTable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="393" lean-forward="true" selection-start-line="193" selection-start-column="4" selection-end-line="393" />
+        <state relative-caret-position="285">
+          <caret line="46" column="25" lean-forward="true" selection-end-line="409" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/ProertyTables.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/avro/VerticalTables.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="312" column="25" lean-forward="true" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/SingleStatementTable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4919">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ee/ut/cs/bigdata/sp2bench/parquet/VerticalTables.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="361" column="9" lean-forward="true" selection-start-line="361" selection-start-column="9" selection-end-line="361" selection-end-column="9" />
+        <state relative-caret-position="675">
+          <caret line="446" column="9" lean-forward="true" selection-end-line="486" />
         </state>
       </provider>
     </entry>

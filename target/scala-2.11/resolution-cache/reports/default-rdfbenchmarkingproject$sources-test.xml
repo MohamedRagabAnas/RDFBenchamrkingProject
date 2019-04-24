@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190423042309"/>
+		date="20190424031116"/>
 	<dependencies>
 		<module organisation="com.databricks" name="spark-avro_2.11">
 			<revision name="4.0.0" status="release" pubdate="20171030152444" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/databricks/spark-avro" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="157">
@@ -27,7 +27,7 @@
 				<metadata-artifact status="no" details="" size="2475" time="0" location="/home/cloudera/.ivy2/cache/postgresql/postgresql/ivy-8.4-702.jdbc4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/postgresql/postgresql/8.4-702.jdbc4/postgresql-8.4-702.jdbc4.pom"/>
 				<caller organisation="default" name="rdfbenchmarkingproject$sources" conf="test, compile, runtime" rev="8.4-702.jdbc4" rev-constraint-default="8.4-702.jdbc4" rev-constraint-dynamic="8.4-702.jdbc4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="postgresql" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="661895" time="611" location="/home/cloudera/.ivy2/cache/postgresql/postgresql/srcs/postgresql-8.4-702.jdbc4-sources.jar">
+					<artifact name="postgresql" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="661895" time="0" location="/home/cloudera/.ivy2/cache/postgresql/postgresql/srcs/postgresql-8.4-702.jdbc4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/postgresql/postgresql/8.4-702.jdbc4/postgresql-8.4-702.jdbc4-sources.jar"/>
 					</artifact>
 				</artifacts>

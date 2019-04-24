@@ -4,7 +4,7 @@
 		module="rdfbenchmarkingproject$sources_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190423042306"
+		publication="20190424031113"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

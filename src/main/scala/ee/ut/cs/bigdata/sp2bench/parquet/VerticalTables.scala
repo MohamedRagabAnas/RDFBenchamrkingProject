@@ -475,12 +475,6 @@ object VerticalTables {
         | """.stripMargin).show)
 
 
-
-
-
-
-
-
   }
 
 }

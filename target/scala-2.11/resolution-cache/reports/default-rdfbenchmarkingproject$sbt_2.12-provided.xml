@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional"
-		date="20190423042240"/>
+		date="20190424031106"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>
