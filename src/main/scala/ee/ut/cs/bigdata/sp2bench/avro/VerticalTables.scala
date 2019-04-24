@@ -120,6 +120,19 @@ object VerticalTables {
     //spark.sql("create table if not exists inJournal as select * from inJournalDF")
 
 
+
+
+    /* Used Here Only for Query 9   */
+
+    val RDFDF = spark.read.format("com.databricks.spark.avro").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/AVRO/SingleTable").toDF()
+    RDFDF.createOrReplaceTempView("PredicatesCombined")
+
+
+
+
+
+
+
     /////////////////////\\\SP2Bench Query1 VP\\\/////////////////////
     //val tq1 = System.nanoTime
 
@@ -282,6 +295,184 @@ object VerticalTables {
       """.stripMargin
 
     ).show())
+
+
+
+
+    /////////////////////////////////////////////// q6/////////////////////////////////////////////////////////////////////////////////
+
+
+
+    spark.time(spark.sql(
+      """
+        |SELECT
+        |    L1.yr       AS yr,
+        |    L1.name     AS name,
+        |    L1.document AS document
+        |FROM
+        |    (
+        |        SELECT
+        |            RT1.subject AS class,
+        |            RT2.subject      AS document,
+        |            DI.object      AS yr,
+        |            DC.object   AS author,
+        |            FN.object      AS name
+        |        FROM
+        |            rdfs_subClassOf   RT1
+        |            JOIN Type RT2      ON RT1.subject=RT2.object
+        |            JOIN Issued DI ON DI.subject=RT2.subject
+        |            JOIN Creator DC     ON DC.subject=DI.subject
+        |            JOIN Name FN      ON DC.object=FN.subject
+        |        WHERE RT1.object='http://xmlns.com/foaf/0.1/Document'
+        |    ) AS L1
+        |
+        |    LEFT JOIN
+        |    (
+        |        SELECT
+        |			RT1.subject AS class,
+        |            RT2.subject      AS document,
+        |            DI.object      AS yr,
+        |            DC.object   AS author
+        |
+        |        FROM
+        |            rdfs_subClassOf RT1
+        |            JOIN Type RT2      ON RT1.subject=RT2.object
+        |            JOIN Issued DI ON DI.subject=RT2.subject
+        |            JOIN Creator DC     ON DC.subject=DI.subject
+        |
+        |        WHERE RT1.object='http://xmlns.com/foaf/0.1/Document'
+        |
+        |    ) AS L2
+        |    ON L1.author=L2.author AND L2.yr<L1.yr
+        |WHERE L2.author IS NULL
+      """.stripMargin
+
+    ).show())
+
+
+
+
+    /////////////////////////////////////////////// Query 8 Vertical Tables  /////////////////////////////////////////////////////////////////////////////////
+
+
+
+    spark.time(spark.sql(
+      """
+        | SELECT DISTINCT
+        |    name
+        |FROM
+        |    Type RT
+        |    JOIN Name FN  ON RT.subject=FN.subject
+        |    JOIN
+        |    (
+        |        SELECT
+        |            name,
+        |            erdoes
+        |        FROM
+        |        (
+        |            SELECT
+        |                FN2.object AS name,
+        |                DC1.object AS erdoes
+        |            FROM
+        |                Creator DC1
+        |                JOIN Creator DC2 ON DC1.subject=DC2.subject
+        |                JOIN Name FN2  ON DC2.object=FN2.subject
+        |            WHERE
+        |                NOT DC1.object=DC2.object
+        |        ) AS L
+        |        UNION
+        |        (
+        |            SELECT
+        |                FN2.object AS name,
+        |                DC1.object AS erdoes
+        |            FROM
+        |                Creator DC1
+        |                JOIN Creator DC2 ON DC1.subject=DC2.subject
+        |                JOIN Creator DC3 ON DC2.object=DC3.object
+        |                JOIN Creator DC4 ON DC3.subject=DC4.subject
+        |                JOIN Name FN2  ON DC4.object=FN2.subject
+        |            WHERE
+        |                NOT DC2.object=DC1.object
+        |                AND NOT DC3.subject=DC1.subject
+        |                AND NOT DC4.object=DC1.object
+        |                AND NOT DC2.object=DC4.object
+        |        )
+        |    ) AS R ON FN.subject=R.erdoes
+        |WHERE
+        |    RT.object='http://xmlns.com/foaf/0.1/Person'
+        |    AND FN.object='Paul Erdoes'
+      """.stripMargin).show())
+
+
+    /////////////////////////////////// Query 9 vertical Tables/////////////////
+
+
+    spark.time(spark.sql(
+      """
+        |SELECT DISTINCT L.predicate
+        |FROM
+        |    (
+        |
+        |        SELECT
+        |            RT.subject,
+        |            T.predicate
+        |        FROM
+        |            Type RT
+        |            JOIN PredicatesCombined AS T ON RT.subject=T.object
+        |        WHERE
+        |            RT.object='http://xmlns.com/foaf/0.1/Person'
+        |
+        |
+        |        UNION
+        |
+        |
+        |        SELECT
+        |            RT.subject,
+        |            T.predicate
+        |        FROM
+        |            Type RT
+        |            JOIN  PredicatesCombined  AS T ON RT.subject=T.subject
+        |        WHERE
+        |            RT.object='http://xmlns.com/foaf/0.1/Person'
+        |
+        |    ) AS L
+        |""".stripMargin).show())
+
+
+
+    /////////////////////////////// Query 10 ///////////////////////////////////////
+
+
+    spark.time(spark.sql(
+      """
+        |
+        |SELECT
+        |    L.subject AS subject, L.predicate AS predicate
+        |FROM
+        |(
+        |SELECT A.subject, "dc:#Creator" As predicate  FROM Creator A WHERE  A.object='http://localhost/persons/Paul_Erdoes'
+        |UNION
+        |SELECT E.subject , "dc:#Editor" As predicate  FROM Editor E  WHERE  E.object='http://localhost/persons/Paul_Erdoes'
+        |) AS L
+      """.stripMargin).show())
+
+
+
+    ///////////////////////////////////// Query 11 ////////////////////////
+
+    spark.time(spark.sql(
+      """
+        |SELECT
+        |    RSA.object AS ee
+        |FROM
+        |    SeeAlso RSA
+        |
+        |ORDER BY ee DESC
+        |LIMIT 10
+        |
+        | """.stripMargin).show)
+
+
 
 
 
