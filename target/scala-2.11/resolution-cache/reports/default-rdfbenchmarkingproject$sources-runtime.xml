@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190424031116"/>
+		date="20190424095346"/>
 	<dependencies>
 		<module organisation="com.databricks" name="spark-avro_2.11">
 			<revision name="4.0.0" status="release" pubdate="20171030152444" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/databricks/spark-avro" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="157">

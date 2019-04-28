@@ -311,18 +311,7 @@ object ProertyTables {
         |LIMIT 10
       """.stripMargin).show())
 
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
-=======
->>>>>>> c1a9473fff2d28bcedb5820ef0cfa389b6984a67
 
   }
 
